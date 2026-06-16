@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mum's Daily Digest</title>
+  <meta name="description" content="A small daily digest for Madhvi: nature, films, family roots, gentle health, and a puzzle.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0f12;
+      --ink: #f6f1e8;
+      --muted: #cfc6b8;
+      --soft: rgba(246, 241, 232, 0.11);
+      --line: rgba(246, 241, 232, 0.22);
+      --gold: #f0b85a;
+      --rose: #d7847f;
+      --leaf: #77b481;
+      --sea: #76acc2;
+      --violet: #a890ce;
+      --panel: #131a1d;
+      --panel-2: #172124;
+      --shadow: 0 22px 70px rgba(0, 0, 0, 0.34);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    .hero {
+      position: relative;
+      min-height: min(620px, 76vh);
+      display: flex;
+      align-items: end;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(7, 10, 12, 0.20) 0%, rgba(7, 10, 12, 0.32) 38%, rgba(7, 10, 12, 0.82) 100%),
+        url("assets/mum-digest-hero.png") center 36% / cover;
+    }
+
+    .hero-inner,
+    main {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero-inner {
+      padding: 76px 0 34px;
+    }
+
+    .eyebrow {
+      width: fit-content;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(11, 15, 18, 0.38);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    h1 {
+      margin: 18px 0 10px;
+      max-width: 760px;
+      font-size: clamp(2.4rem, 7vw, 5.8rem);
+      line-height: 0.96;
+      font-weight: 760;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+
+    .hero-copy {
+      max-width: 640px;
+      margin: 0;
+      color: #eee0cf;
+      font-size: 1.08rem;
+    }
+
+    main {
+      padding: 22px 0 72px;
+    }
+
+    .today-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin: 0 0 24px;
+    }
+
+    .strip-item {
+      min-height: 86px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    }
+
+    .strip-label,
+    .card-label {
+      display: block;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 650;
+      text-transform: uppercase;
+    }
+
+    .strip-value {
+      margin-top: 8px;
+      display: block;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .digest-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card,
+    .side-panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      box-shadow: var(--shadow);
+    }
+
+    .card {
+      min-height: 230px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top: 3px solid var(--accent, var(--gold));
+    }
+
+    .card h2,
+    .side-panel h2 {
+      margin: 10px 0 10px;
+      font-size: 1.2rem;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .card p,
+    .side-panel p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .card-footer {
+      margin-top: 18px;
+      color: var(--ink);
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    .side-panel {
+      padding: 18px;
+      position: sticky;
+      top: 18px;
+    }
+
+    .quote {
+      margin: 18px 0 0;
+      padding: 14px 0 0;
+      border-top: 1px solid var(--line);
+      color: #eadfce;
+      font-size: 1.05rem;
+    }
+
+    details {
+      margin-top: 14px;
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .answer {
+      margin-top: 10px;
+      color: var(--muted);
+    }
+
+    .tiny-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .tiny-list span {
+      display: block;
+      padding: 10px 0;
+      border-top: 1px solid rgba(246, 241, 232, 0.12);
+      color: var(--muted);
+    }
+
+    .footer {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 0 0 34px;
+      color: #928878;
+      font-size: 0.86rem;
+    }
+
+    @media (max-width: 860px) {
+      .hero {
+        min-height: 560px;
+      }
+
+      .today-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .layout,
+      .digest-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .side-panel {
+        position: static;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .hero {
+        min-height: 520px;
+        background-position: center top;
+      }
+
+      .hero-inner,
+      main,
+      .footer {
+        width: min(100% - 24px, 1120px);
+      }
+
+      .today-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        min-height: 210px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero" aria-label="Sunrise over Mauritius">
+    <div class="hero-inner">
+      <div class="eyebrow" id="mauritiusDate">Today in Mauritius</div>
+      <h1>Mum's Daily Little Digest</h1>
+      <p class="hero-copy">A gentle mix for Madhvi: sky, cinema, roots, food, movement, and one small sparkle for the mind.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="today-strip" aria-label="Today at a glance">
+      <div class="strip-item">
+        <span class="strip-label">Mood</span>
+        <span class="strip-value" id="mood">Calm and bright</span>
+      </div>
+      <div class="strip-item">
+        <span class="strip-label">Today look for</span>
+        <span class="strip-value" id="lookFor">A soft edge of cloud</span>
+      </div>
+      <div class="strip-item">
+        <span class="strip-label">One song feeling</span>
+        <span class="strip-value" id="songFeeling">A quiet ghazal</span>
+      </div>
+      <div class="strip-item">
+        <span class="strip-label">Family seed</span>
+        <span class="strip-value" id="familySeed">A tiny hello</span>
+      </div>
+    </section>
+
+    <section class="layout">
+      <div class="digest-grid" id="digestCards" aria-label="Digest cards"></div>
+
+      <aside class="side-panel" aria-label="Today's puzzle and note">
+        <span class="card-label">Mind sparkle</span>
+        <h2 id="puzzleTitle">A small riddle</h2>
+        <p id="puzzleText">I follow you all day, but disappear when the light goes away. What am I?</p>
+        <details>
+          <summary>Answer</summary>
+          <p class="answer" id="puzzleAnswer">A shadow.</p>
+        </details>
+
+        <div class="quote" id="dailyNote">Stand tall like the pine tree, Mum.</div>
+
+        <div class="tiny-list" aria-label="Tomorrow seeds">
+          <span id="tomorrowSeedOne">Maybe tomorrow: a little story from old Mauritius.</span>
+          <span id="tomorrowSeedTwo">Maybe tomorrow: one beautiful film detail.</span>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <div class="footer">
+    Made for Mum with safe family memories and evergreen tidbits. The mix changes by Mauritius date.
+  </div>
+
+  <script>
+    const data = {
+      moods: [
+        "Calm and bright",
+        "Soft rain energy",
+        "Film evening mood",
+        "Temple-lamp quiet",
+        "Balcony tea feeling",
+        "Fresh walk feeling",
+        "Moonrise calm",
+        "Sunny kitchen warmth"
+      ],
+      lookFor: [
+        "A soft edge of cloud",
+        "Gold light on leaves",
+        "A new shape near the horizon",
+        "The tall pine standing steady",
+        "The first blue after rain",
+        "A gentle moonrise",
+        "A little shine on the sea",
+        "The quiet colour before sunset"
+      ],
+      songFeelings: [
+        "A quiet ghazal",
+        "A Sanjay Leela Bhansali melody",
+        "A soft Filmfare memory",
+        "A romance-drama evening",
+        "A peaceful old Hindi song",
+        "A song for balcony clouds",
+        "A slow dance-concert feeling",
+        "A deep-story cinema mood"
+      ],
+      familySeeds: [
+        "A tiny hello",
+        "A photo of the sky",
+        "One old family story",
+        "A small laugh together",
+        "A recipe memory",
+        "A favourite movie line",
+        "A note from Toronto",
+        "A calm goodnight"
+      ],
+      cards: {
+        sky: [
+          {
+            title: "Sky Corner",
+            body: "Cloud edges often glow before the whole sky changes. That tiny bright rim is the sun catching water droplets from the side.",
+            footer: "Photo thought: one close-up of a cloud edge.",
+            accent: "#f0b85a"
+          },
+          {
+            title: "Sky Corner",
+            body: "After rain, the air can look clearer because dust and tiny particles have been washed down. That is why the blue sometimes feels brand new.",
+            footer: "Photo thought: the first clear patch after rain.",
+            accent: "#76acc2"
+          },
+          {
+            title: "Sky Corner",
+            body: "A moonrise can look larger near the horizon because our eyes compare it with trees, roofs, and mountains.",
+            footer: "Photo thought: moon plus one familiar landmark.",
+            accent: "#a890ce"
+          },
+          {
+            title: "Sky Corner",
+            body: "Norfolk Island pines grow in neat tiers, almost like natural shelves. That is why the silhouette looks so graceful against the evening sky.",
+            footer: "Photo thought: the pine as a dark outline.",
+            accent: "#77b481"
+          }
+        ],
+        cinema: [
+          {
+            title: "Cinema Room",
+            body: "Mirch Masala is remembered as a strong Indian art film because it turns a small village story into a story about courage and dignity.",
+            footer: "Mum match: deeper meaning and real emotion.",
+            accent: "#d7847f"
+          },
+          {
+            title: "Cinema Room",
+            body: "Naseeruddin Shah is loved in parallel cinema because he can make a quiet face feel full of thought. Sometimes the silence is the acting.",
+            footer: "Watch for: eyes, pauses, small changes.",
+            accent: "#f0b85a"
+          },
+          {
+            title: "Cinema Room",
+            body: "Sanjay Leela Bhansali often uses colour, music, and grand rooms like emotional weather. The scene tells you how the heart feels.",
+            footer: "Watch for: red, gold, lamps, fabric.",
+            accent: "#a890ce"
+          },
+          {
+            title: "Cinema Room",
+            body: "12th Fail feels powerful because it treats effort with respect. The drama comes from persistence, not from noise.",
+            footer: "Mum match: a real story with heart.",
+            accent: "#76acc2"
+          }
+        ],
+        roots: [
+          {
+            title: "Roots & Mauritius",
+            body: "Aapravasi Ghat in Port Louis is tied to the history of Indian indentured workers who came to Mauritius and built new lives across generations.",
+            footer: "Family thread: courage, memory, survival.",
+            accent: "#77b481"
+          },
+          {
+            title: "Roots & Mauritius",
+            body: "Mauritian Creole became a home language because many communities needed one shared way to speak with each other in daily life.",
+            footer: "Phrase seed: one Creole word a day.",
+            accent: "#f0b85a"
+          },
+          {
+            title: "Roots & Mauritius",
+            body: "Ganga Talao is special in Mauritian Hindu life. It links island devotion with a feeling of sacred geography.",
+            footer: "Memory seed: temple lights on the mountain.",
+            accent: "#76acc2"
+          },
+          {
+            title: "Roots & Mauritius",
+            body: "Many Indo-Mauritian surnames changed shape as clerks wrote them down through English, French, and Creole sounds.",
+            footer: "Family thread: names carrying journeys.",
+            accent: "#d7847f"
+          }
+        ],
+        wellbeing: [
+          {
+            title: "Gentle Wellbeing",
+            body: "A slow walk after sitting can make the whole body feel more awake. Even a short one counts when the day is busy.",
+            footer: "Tiny choice: five peaceful minutes.",
+            accent: "#77b481"
+          },
+          {
+            title: "Gentle Wellbeing",
+            body: "A colourful plate can feel joyful before it feels healthy: green leaves, tomato red, a little lentil, a little spice.",
+            footer: "Kitchen thought: colour first.",
+            accent: "#f0b85a"
+          },
+          {
+            title: "Gentle Wellbeing",
+            body: "Meditation does not have to be long. Three quiet breaths by the window can be enough to soften the morning.",
+            footer: "Tiny choice: breathe with the view.",
+            accent: "#a890ce"
+          },
+          {
+            title: "Gentle Wellbeing",
+            body: "Warm water, a calm seat, and a few minutes of quiet can turn an ordinary afternoon into a small reset.",
+            footer: "Tiny choice: a gentle pause.",
+            accent: "#76acc2"
+          }
+        ],
+        food: [
+          {
+            title: "Food & Home",
+            body: "Tulsi is loved in many homes not just as a plant, but as a little daily sign of care, prayer, and freshness.",
+            footer: "Home thought: notice one leaf closely.",
+            accent: "#77b481"
+          },
+          {
+            title: "Food & Home",
+            body: "A little roasted jeera can make simple food feel warmer and deeper. Some flavours are small but very powerful.",
+            footer: "Kitchen thought: smell before tasting.",
+            accent: "#d7847f"
+          },
+          {
+            title: "Food & Home",
+            body: "Mauritian food carries many histories at once: Indian spice, island produce, French words, Creole comfort.",
+            footer: "Memory seed: one dish, many journeys.",
+            accent: "#f0b85a"
+          },
+          {
+            title: "Food & Home",
+            body: "A simple chutney can change a whole meal: sour, fresh, spicy, and bright all in one spoon.",
+            footer: "Kitchen thought: brightness matters.",
+            accent: "#76acc2"
+          }
+        ],
+        question: [
+          {
+            title: "Family Question",
+            body: "Which film scene stayed in your heart for years, even if you only saw it once?",
+            footer: "Good for a voice note.",
+            accent: "#a890ce"
+          },
+          {
+            title: "Family Question",
+            body: "What is one thing from old Mauritius that young people should remember?",
+            footer: "Good for a family story.",
+            accent: "#77b481"
+          },
+          {
+            title: "Family Question",
+            body: "Which song makes you feel peaceful as soon as it starts?",
+            footer: "Good for a music evening.",
+            accent: "#d7847f"
+          },
+          {
+            title: "Family Question",
+            body: "What small food smell makes home feel like home?",
+            footer: "Good for a kitchen memory.",
+            accent: "#f0b85a"
+          }
+        ]
+      },
+      puzzles: [
+        {
+          title: "A small riddle",
+          text: "I follow you all day, but disappear when the light goes away. What am I?",
+          answer: "A shadow."
+        },
+        {
+          title: "A gentle number",
+          text: "I am an even number. If you take away my first letter, I become odd. What number am I?",
+          answer: "Six. Take away the s and it becomes IX, which is nine in Roman numerals."
+        },
+        {
+          title: "A word play",
+          text: "What has many keys but cannot open a single door?",
+          answer: "A piano."
+        },
+        {
+          title: "A sky riddle",
+          text: "I am full at night, gone by morning, and sometimes hide behind clouds. What am I?",
+          answer: "The moon."
+        },
+        {
+          title: "A kitchen riddle",
+          text: "I get smaller every time I help your tea taste sweet. What am I?",
+          answer: "A spoonful of sugar."
+        }
+      ],
+      notes: [
+        "Stand tall like the pine tree, Mum.",
+        "A quiet day can still be a beautiful day.",
+        "The sky noticed you looking at it again.",
+        "A little walk, a little prayer, a little smile.",
+        "Some days only need one soft song.",
+        "Your balcony view has its own daily cinema.",
+        "A small good morning can carry a lot of love.",
+        "Clouds change slowly, and that is part of the beauty."
+      ],
+      tomorrow: [
+        "Maybe tomorrow: a little story from old Mauritius.",
+        "Maybe tomorrow: one beautiful film detail.",
+        "Maybe tomorrow: a Creole phrase with warmth.",
+        "Maybe tomorrow: a tiny food memory.",
+        "Maybe tomorrow: a sky photo idea.",
+        "Maybe tomorrow: a calm puzzle for tea time."
+      ]
+    };
+
+    function mauritiusParts(date = new Date()) {
+      const parts = new Intl.DateTimeFormat("en-CA", {
+        timeZone: "Indian/Mauritius",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }).formatToParts(date);
+      return Object.fromEntries(parts.map(part => [part.type, part.value]));
+    }
+
+    function seedForToday() {
+      const parts = mauritiusParts();
+      return Number(`${parts.year}${parts.month}${parts.day}`);
+    }
+
+    function pick(items, salt = 0) {
+      const seed = seedForToday();
+      const index = Math.abs((seed * 37 + salt * 101) % items.length);
+      return items[index];
+    }
+
+    function friendlyDate() {
+      return new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Indian/Mauritius",
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+      }).format(new Date());
+    }
+
+    function renderCard(item, label) {
+      return `
+        <article class="card" style="--accent: ${item.accent}">
+          <div>
+            <span class="card-label">${label}</span>
+            <h2>${item.title}</h2>
+            <p>${item.body}</p>
+          </div>
+          <div class="card-footer">${item.footer}</div>
+        </article>
+      `;
+    }
+
+    const categories = [
+      ["Sky", data.cards.sky],
+      ["Cinema", data.cards.cinema],
+      ["Roots", data.cards.roots],
+      ["Wellbeing", data.cards.wellbeing],
+      ["Kitchen", data.cards.food],
+      ["Family", data.cards.question]
+    ];
+
+    document.getElementById("mauritiusDate").textContent = friendlyDate();
+    document.getElementById("mood").textContent = pick(data.moods, 1);
+    document.getElementById("lookFor").textContent = pick(data.lookFor, 2);
+    document.getElementById("songFeeling").textContent = pick(data.songFeelings, 3);
+    document.getElementById("familySeed").textContent = pick(data.familySeeds, 4);
+
+    const cards = categories.map(([label, items], idx) => renderCard(pick(items, idx + 10), label));
+    document.getElementById("digestCards").innerHTML = cards.join("");
+
+    const puzzle = pick(data.puzzles, 25);
+    document.getElementById("puzzleTitle").textContent = puzzle.title;
+    document.getElementById("puzzleText").textContent = puzzle.text;
+    document.getElementById("puzzleAnswer").textContent = puzzle.answer;
+    document.getElementById("dailyNote").textContent = pick(data.notes, 30);
+    document.getElementById("tomorrowSeedOne").textContent = pick(data.tomorrow, 35);
+    document.getElementById("tomorrowSeedTwo").textContent = pick(data.tomorrow, 36);
+  </script>
+</body>
+</html>
