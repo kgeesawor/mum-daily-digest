@@ -331,7 +331,7 @@
     <div class="hero-inner">
       <div class="eyebrow" id="mauritiusDate">Today in Mauritius</div>
       <h1>Mum's Daily Little Digest</h1>
-      <p class="hero-copy">A gentle mix for Madhvi: sky, cinema, roots, good Mauritius news, food, movement, and one small sparkle for the mind.</p>
+      <p class="hero-copy">A gentle mix for Madhvi: sky, cinema, roots, good news from Mauritius, Canada and the UK, food, movement, and one small sparkle for the mind.</p>
     </div>
   </section>
 
@@ -358,6 +358,9 @@
     <nav class="tabbar" role="tablist" aria-label="Digest sections">
       <button class="tab-button" id="tabDigest" type="button" role="tab" aria-selected="true" aria-controls="digestPanel">Daily Digest</button>
       <button class="tab-button" id="tabNews" type="button" role="tab" aria-selected="false" aria-controls="newsPanel">Mauritius Good News</button>
+      <button class="tab-button" id="tabCanadaUk" type="button" role="tab" aria-selected="false" aria-controls="canadaUkPanel">Canada & UK</button>
+      <button class="tab-button" id="tabWork" type="button" role="tab" aria-selected="false" aria-controls="workPanel">Checkout & Caribou</button>
+      <button class="tab-button" id="tabFamily" type="button" role="tab" aria-selected="false" aria-controls="familyPanel">Kushal & Shaadhvi</button>
     </nav>
 
     <section class="tab-panel is-active" id="digestPanel" role="tabpanel" aria-labelledby="tabDigest">
@@ -386,10 +389,22 @@
     <section class="tab-panel" id="newsPanel" role="tabpanel" aria-labelledby="tabNews">
       <div class="news-grid" id="newsCards" aria-label="Uplifting Mauritius news"></div>
     </section>
+
+    <section class="tab-panel" id="canadaUkPanel" role="tabpanel" aria-labelledby="tabCanadaUk">
+      <div class="news-grid" id="canadaUkCards" aria-label="Uplifting Canada and UK news"></div>
+    </section>
+
+    <section class="tab-panel" id="workPanel" role="tabpanel" aria-labelledby="tabWork">
+      <div class="news-grid" id="workCards" aria-label="Checkout and Caribou news"></div>
+    </section>
+
+    <section class="tab-panel" id="familyPanel" role="tabpanel" aria-labelledby="tabFamily">
+      <div class="news-grid" id="familyCards" aria-label="Kushal and Shaadhvi work notes"></div>
+    </section>
   </main>
 
   <div class="footer">
-    Made for Mum with safe family memories, evergreen tidbits, and sourced Mauritius news. The mix changes by Mauritius date.
+    Made for Mum with safe family memories, evergreen tidbits, and sourced good news. The mix changes by Mauritius date.
   </div>
 
   <script>
@@ -648,6 +663,170 @@
           accent: "#f0b85a"
         }
       ],
+      canadaUkNews: [
+        {
+          label: "Canada",
+          title: "Clean air gets a national moment",
+          body: "Canada marked Clean Air Day on June 3, inviting people to think about how clean air supports health, nature, and daily life.",
+          footer: "Why Mum might like it: it connects health with fresh outdoor air and gentle walks.",
+          source: "Canada.ca, Jun 2026",
+          href: "https://www.canada.ca/en/environment-climate-change/campaigns/canadian-environment-week/clean-air-day.html",
+          accent: "#76acc2"
+        },
+        {
+          label: "Canada",
+          title: "A week to celebrate the environment",
+          body: "Canadian Environment Week encouraged families, schools, and communities to celebrate nature and protect the places they love.",
+          footer: "Why Mum might like it: it is a soft reminder to notice trees, sky, and water.",
+          source: "Canada.ca, May-Jun 2026",
+          href: "https://www.canada.ca/en/environment-climate-change/services/canadian-environment-week.html",
+          accent: "#77b481"
+        },
+        {
+          label: "Canada",
+          title: "Care work is getting clearer data",
+          body: "Statistics Canada has been building a framework for understanding Canada's care economy, including paid and unpaid care work.",
+          footer: "Why Mum might like it: it honours the invisible work families and caregivers do every day.",
+          source: "Statistics Canada",
+          href: "https://www150.statcan.gc.ca/n1/pub/89-652-x/89-652-x2023002-eng.htm",
+          accent: "#d7847f"
+        },
+        {
+          label: "UK",
+          title: "The UK is measuring wellbeing beyond money",
+          body: "The Office for National Statistics released June 2026 wellbeing measures, looking at quality of life and progress beyond GDP.",
+          footer: "Why Mum might like it: it says a good life is more than numbers in the economy.",
+          source: "ONS, 8 Jun 2026",
+          href: "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/measuringprogresswellbeingandbeyondgdpintheuk/june2026",
+          accent: "#a890ce"
+        },
+        {
+          label: "UK",
+          title: "Nature is being linked to better health",
+          body: "Natural England shared guidance on nature-based health interventions, helping organisations evaluate outdoor activities that support wellbeing.",
+          footer: "Why Mum might like it: walks, gardens, and green spaces are being taken seriously.",
+          source: "Natural England, 17 Mar 2026",
+          href: "https://naturalengland.blog.gov.uk/2026/03/17/healthy-outdoors-strengthening-the-evidence-for-nature-based-health-interventions/",
+          accent: "#77b481"
+        },
+        {
+          label: "UK",
+          title: "Cities are putting nature at the heart",
+          body: "Natural England highlighted urban greening work across the UK and Europe, including how green infrastructure can cool cities and support healthier places.",
+          footer: "Why Mum might like it: it is city life learning from gardens, trees, and shade.",
+          source: "Natural England, 29 May 2026",
+          href: "https://naturalengland.blog.gov.uk/2026/05/29/growing-green-how-englands-cities-are-putting-nature-at-the-heart-of-development/",
+          accent: "#f0b85a"
+        }
+      ],
+      workNews: [
+        {
+          label: "Checkout.com",
+          title: "Checkout.com named a payments Leader",
+          body: "Checkout.com was named a Leader in The Forrester Wave Merchant Payment Providers, Q1 2026, and highlighted its work on agentic commerce and US growth.",
+          footer: "Mum version: Shaadhvi works around a company helping online payments become smoother and safer.",
+          source: "Checkout.com Newsroom, 5 Mar 2026",
+          href: "https://www.checkout.com/newsroom/checkout-com-named-a-leader-by-global-analyst-firm-as-it-bets-on-agentic-commerce-and-grows-us-business",
+          accent: "#a890ce"
+        },
+        {
+          label: "Checkout.com",
+          title: "Payments that quietly help big brands",
+          body: "Checkout.com says it processed more than $300 billion in ecommerce payment volume in 2025 and supports more than 150 processing currencies.",
+          footer: "Mum version: it helps money move when people buy things online.",
+          source: "Checkout.com",
+          href: "https://www.checkout.com/",
+          accent: "#76acc2"
+        },
+        {
+          label: "Checkout.com",
+          title: "A small Mauritius connection",
+          body: "Checkout.com has described Mauritius as a vital part of its journey while inviting people to a finance-focused event there.",
+          footer: "Mum version: Shaadhvi's company has a little Mauritius thread too.",
+          source: "Checkout.com LinkedIn, 2025",
+          href: "https://www.linkedin.com/posts/checkout_were-opening-our-doors-in-mauritius-for-activity-7371384460677804032-gcSu",
+          accent: "#f0b85a"
+        },
+        {
+          label: "Caribou",
+          title: "Caribou helps care agencies fill shifts",
+          body: "Caribou describes itself as an AI platform for shift booking and caregiver engagement, helping agencies fill shifts and retain caregivers.",
+          footer: "Mum version: Kushal works with data to support people who care for others.",
+          source: "Caribou",
+          href: "https://www.caribou.care/",
+          accent: "#77b481"
+        },
+        {
+          label: "Caribou",
+          title: "A new caregiver experience partnership",
+          body: "TheKey selected Caribou Rewards to support caregiver experience nationwide, with a focus on hiring, retention, and workforce growth.",
+          footer: "Mum version: better support for caregivers can mean more stable care for families.",
+          source: "PR Newswire, 9 Apr 2026",
+          href: "https://www.prnewswire.com/news-releases/thekey-selects-caribou-rewards-to-transform-caregiver-experience-nationwide-302745078.html",
+          accent: "#d7847f"
+        },
+        {
+          label: "Caribou",
+          title: "The mission is very human",
+          body: "Caribou says its mission is to solve the caregiver crisis by helping caregivers feel valued, recognised, and financially secure.",
+          footer: "Mum version: technology is being used to make care work more respected.",
+          source: "Caribou LinkedIn",
+          href: "https://ca.linkedin.com/company/joincaribou",
+          accent: "#f0b85a"
+        }
+      ],
+      familyLearn: [
+        {
+          label: "Kushal",
+          title: "What Kushal does",
+          body: "Kushal's public LinkedIn says he is Data Lead at Caribou, 'crunching data to solve caregiver shortages.'",
+          footer: "Mum version: he uses numbers and computer systems to help care teams make better decisions.",
+          source: "Kushal Geesawor LinkedIn",
+          href: "https://ca.linkedin.com/in/kushalgeesawor",
+          accent: "#77b481"
+        },
+        {
+          label: "Kushal",
+          title: "What a Data Lead means",
+          body: "A data lead helps turn messy information into clear patterns, so a team can see what is working and where help is needed.",
+          footer: "Ask him: what did your data help someone understand this week?",
+          source: "Family-friendly explanation",
+          accent: "#76acc2"
+        },
+        {
+          label: "Shaadhvi",
+          title: "What Shaadhvi's world is about",
+          body: "Shaadhvi works in the world of Checkout.com, a London-headquartered payments company that helps businesses accept payments online.",
+          footer: "Mum version: she is close to the invisible systems behind the Pay button.",
+          source: "Checkout.com",
+          href: "https://www.checkout.com/",
+          accent: "#a890ce"
+        },
+        {
+          label: "Shaadhvi",
+          title: "What payments work means",
+          body: "Payments work is about making sure money moves safely, quickly, and correctly between customers, banks, cards, wallets, and businesses.",
+          footer: "Ask her: what makes an online payment feel smooth?",
+          source: "Family-friendly explanation",
+          accent: "#f0b85a"
+        },
+        {
+          label: "Family bridge",
+          title: "Canada and UK, both close to Mum",
+          body: "Kushal is in Canada and Shaadhvi is in the UK, so this digest now keeps one eye on both places, plus Mauritius at the centre.",
+          footer: "Mum version: three homes in one little morning page.",
+          source: "Family context",
+          accent: "#d7847f"
+        },
+        {
+          label: "For later",
+          title: "Shaadhvi can choose what to add",
+          body: "This section can grow with any profile, project, or story Shaadhvi is happy for Mum to read.",
+          footer: "For now, it stays simple, respectful, and focused on the payments world.",
+          source: "Family note",
+          accent: "#77b481"
+        }
+      ],
       puzzles: [
         {
           title: "A small riddle",
@@ -740,6 +919,10 @@
     }
 
     function renderNewsCard(item) {
+      const source = item.href
+        ? `<a class="source-link" href="${item.href}" target="_blank" rel="noopener">Source: ${item.source}</a>`
+        : `<span class="source-link">Source: ${item.source}</span>`;
+
       return `
         <article class="card news-card" style="--accent: ${item.accent}">
           <div>
@@ -749,7 +932,7 @@
           </div>
           <div>
             <div class="card-footer">${item.footer}</div>
-            <a class="source-link" href="${item.href}" target="_blank" rel="noopener">Source: ${item.source}</a>
+            ${source}
           </div>
         </article>
       `;
@@ -773,6 +956,9 @@
     const cards = categories.map(([label, items], idx) => renderCard(pick(items, idx + 10), label));
     document.getElementById("digestCards").innerHTML = cards.join("");
     document.getElementById("newsCards").innerHTML = data.goodNews.map(renderNewsCard).join("");
+    document.getElementById("canadaUkCards").innerHTML = data.canadaUkNews.map(renderNewsCard).join("");
+    document.getElementById("workCards").innerHTML = data.workNews.map(renderNewsCard).join("");
+    document.getElementById("familyCards").innerHTML = data.familyLearn.map(renderNewsCard).join("");
 
     const puzzle = pick(data.puzzles, 25);
     document.getElementById("puzzleTitle").textContent = puzzle.title;
@@ -794,8 +980,14 @@
       tab.addEventListener("click", () => activateTab(tab));
     });
 
-    if (window.location.hash === "#news") {
-      activateTab(document.getElementById("tabNews"));
+    const hashTabs = {
+      "#news": "tabNews",
+      "#canada-uk": "tabCanadaUk",
+      "#work": "tabWork",
+      "#family": "tabFamily"
+    };
+    if (hashTabs[window.location.hash]) {
+      activateTab(document.getElementById(hashTabs[window.location.hash]));
     }
   </script>
 </body>
