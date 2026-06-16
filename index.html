@@ -88,6 +88,43 @@
       padding: 22px 0 72px;
     }
 
+    .tabbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0 0 18px;
+      border-bottom: 1px solid rgba(246, 241, 232, 0.16);
+      padding-bottom: 12px;
+    }
+
+    .tab-button {
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(246, 241, 232, 0.06);
+      color: var(--muted);
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.95rem;
+      font-weight: 750;
+      min-height: 42px;
+      padding: 8px 14px;
+    }
+
+    .tab-button[aria-selected="true"] {
+      background: #f6f1e8;
+      border-color: #f6f1e8;
+      color: #111719;
+    }
+
+    .tab-panel {
+      display: none;
+    }
+
+    .tab-panel.is-active {
+      display: block;
+    }
+
     .today-strip {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -126,7 +163,8 @@
       align-items: start;
     }
 
-    .digest-grid {
+    .digest-grid,
+    .news-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 14px;
@@ -149,6 +187,14 @@
       border-top: 3px solid var(--accent, var(--gold));
     }
 
+    .news-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .news-card {
+      min-height: 260px;
+    }
+
     .card h2,
     .side-panel h2 {
       margin: 10px 0 10px;
@@ -169,6 +215,17 @@
       color: var(--ink);
       font-size: 0.92rem;
       font-weight: 700;
+    }
+
+    .source-link {
+      display: inline-flex;
+      width: fit-content;
+      margin-top: 18px;
+      color: var(--ink);
+      font-size: 0.92rem;
+      font-weight: 750;
+      text-decoration-color: rgba(246, 241, 232, 0.45);
+      text-underline-offset: 3px;
     }
 
     .side-panel {
@@ -233,7 +290,8 @@
       }
 
       .layout,
-      .digest-grid {
+      .digest-grid,
+      .news-grid {
         grid-template-columns: 1fr;
       }
 
@@ -258,6 +316,10 @@
         grid-template-columns: 1fr;
       }
 
+      .tab-button {
+        flex: 1 1 100%;
+      }
+
       .card {
         min-height: 210px;
       }
@@ -269,7 +331,7 @@
     <div class="hero-inner">
       <div class="eyebrow" id="mauritiusDate">Today in Mauritius</div>
       <h1>Mum's Daily Little Digest</h1>
-      <p class="hero-copy">A gentle mix for Madhvi: sky, cinema, roots, food, movement, and one small sparkle for the mind.</p>
+      <p class="hero-copy">A gentle mix for Madhvi: sky, cinema, roots, good Mauritius news, food, movement, and one small sparkle for the mind.</p>
     </div>
   </section>
 
@@ -293,30 +355,41 @@
       </div>
     </section>
 
-    <section class="layout">
-      <div class="digest-grid" id="digestCards" aria-label="Digest cards"></div>
+    <nav class="tabbar" role="tablist" aria-label="Digest sections">
+      <button class="tab-button" id="tabDigest" type="button" role="tab" aria-selected="true" aria-controls="digestPanel">Daily Digest</button>
+      <button class="tab-button" id="tabNews" type="button" role="tab" aria-selected="false" aria-controls="newsPanel">Mauritius Good News</button>
+    </nav>
 
-      <aside class="side-panel" aria-label="Today's puzzle and note">
-        <span class="card-label">Mind sparkle</span>
-        <h2 id="puzzleTitle">A small riddle</h2>
-        <p id="puzzleText">I follow you all day, but disappear when the light goes away. What am I?</p>
-        <details>
-          <summary>Answer</summary>
-          <p class="answer" id="puzzleAnswer">A shadow.</p>
-        </details>
+    <section class="tab-panel is-active" id="digestPanel" role="tabpanel" aria-labelledby="tabDigest">
+      <div class="layout">
+        <div class="digest-grid" id="digestCards" aria-label="Digest cards"></div>
 
-        <div class="quote" id="dailyNote">Stand tall like the pine tree, Mum.</div>
+        <aside class="side-panel" aria-label="Today's puzzle and note">
+          <span class="card-label">Mind sparkle</span>
+          <h2 id="puzzleTitle">A small riddle</h2>
+          <p id="puzzleText">I follow you all day, but disappear when the light goes away. What am I?</p>
+          <details>
+            <summary>Answer</summary>
+            <p class="answer" id="puzzleAnswer">A shadow.</p>
+          </details>
 
-        <div class="tiny-list" aria-label="Tomorrow seeds">
-          <span id="tomorrowSeedOne">Maybe tomorrow: a little story from old Mauritius.</span>
-          <span id="tomorrowSeedTwo">Maybe tomorrow: one beautiful film detail.</span>
-        </div>
-      </aside>
+          <div class="quote" id="dailyNote">Stand tall like the pine tree, Mum.</div>
+
+          <div class="tiny-list" aria-label="Tomorrow seeds">
+            <span id="tomorrowSeedOne">Maybe tomorrow: a little story from old Mauritius.</span>
+            <span id="tomorrowSeedTwo">Maybe tomorrow: one beautiful film detail.</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="newsPanel" role="tabpanel" aria-labelledby="tabNews">
+      <div class="news-grid" id="newsCards" aria-label="Uplifting Mauritius news"></div>
     </section>
   </main>
 
   <div class="footer">
-    Made for Mum with safe family memories and evergreen tidbits. The mix changes by Mauritius date.
+    Made for Mum with safe family memories, evergreen tidbits, and sourced Mauritius news. The mix changes by Mauritius date.
   </div>
 
   <script>
@@ -519,6 +592,62 @@
           }
         ]
       },
+      goodNews: [
+        {
+          label: "Schools",
+          title: "Recycling starts in 246 schools",
+          body: "Mauritius has launched a National Waste Paper Collection and Recycling Project across primary and secondary schools, making environmental care part of everyday school life.",
+          footer: "Why it is lovely: children learn clean habits at school and bring them home.",
+          source: "GIS Mauritius, 16 Jun 2026",
+          href: "https://gis.govmu.org/gis/?page_id=4042",
+          accent: "#77b481"
+        },
+        {
+          label: "Ocean",
+          title: "Children learning to protect the sea",
+          body: "Odysseo @ the Schools has been teaching Grade 4 learners about marine life, blue carbon ecosystems, climate change, and plastic pollution through hands-on activities.",
+          footer: "Why it is lovely: the next generation is growing up as ocean guardians.",
+          source: "GIS Mauritius, 12 Jun 2026",
+          href: "https://gis.govmu.org/gis/?page_id=4042",
+          accent: "#76acc2"
+        },
+        {
+          label: "Kindness",
+          title: "Blood donors are helping the whole island",
+          body: "Mauritius marked World Blood Donor Day with young donors and students taking part. Voluntary donors now account for 87.7% of the national blood supply.",
+          footer: "Why it is lovely: quiet generosity is saving lives every day.",
+          source: "GIS Mauritius, 15 Jun 2026",
+          href: "https://gis.govmu.org/gis/?page_id=4042",
+          accent: "#d7847f"
+        },
+        {
+          label: "Green Jobs",
+          title: "Climate action can create opportunity",
+          body: "A World Bank report says Mauritius could generate up to 32,000 jobs by 2030 through renewable energy and sustainable use of ocean resources.",
+          footer: "Why it is lovely: protecting the island can also create work for families.",
+          source: "World Bank, 19 Feb 2026",
+          href: "https://www.worldbank.org/en/news/press-release/2026/02/19/mauritius-leans-into-climate-resilience-and-inclusive-growth-to-unleash-job-creation-at-scale",
+          accent: "#f0b85a"
+        },
+        {
+          label: "Children",
+          title: "Children celebrated as protectors of water",
+          body: "For the International Day of the African Child, Mauritian students shared work on water and environmental protection, with prizes awarded to participating schools.",
+          footer: "Why it is lovely: children were treated as important voices for the island.",
+          source: "GIS Mauritius, 16 Jun 2026",
+          href: "https://gis.govmu.org/gis/?page_id=4042",
+          accent: "#a890ce"
+        },
+        {
+          label: "Community",
+          title: "Centenarians honoured with care",
+          body: "Mauritius recently celebrated new centenarians with family, flowers, certificates, and support from social services and community groups.",
+          footer: "Why it is lovely: a long life is being honoured with dignity.",
+          source: "GIS Mauritius, 15-16 Jun 2026",
+          href: "https://gis.govmu.org/gis/?page_id=4042",
+          accent: "#f0b85a"
+        }
+      ],
       puzzles: [
         {
           title: "A small riddle",
@@ -610,6 +739,22 @@
       `;
     }
 
+    function renderNewsCard(item) {
+      return `
+        <article class="card news-card" style="--accent: ${item.accent}">
+          <div>
+            <span class="card-label">${item.label}</span>
+            <h2>${item.title}</h2>
+            <p>${item.body}</p>
+          </div>
+          <div>
+            <div class="card-footer">${item.footer}</div>
+            <a class="source-link" href="${item.href}" target="_blank" rel="noopener">Source: ${item.source}</a>
+          </div>
+        </article>
+      `;
+    }
+
     const categories = [
       ["Sky", data.cards.sky],
       ["Cinema", data.cards.cinema],
@@ -627,6 +772,7 @@
 
     const cards = categories.map(([label, items], idx) => renderCard(pick(items, idx + 10), label));
     document.getElementById("digestCards").innerHTML = cards.join("");
+    document.getElementById("newsCards").innerHTML = data.goodNews.map(renderNewsCard).join("");
 
     const puzzle = pick(data.puzzles, 25);
     document.getElementById("puzzleTitle").textContent = puzzle.title;
@@ -635,6 +781,22 @@
     document.getElementById("dailyNote").textContent = pick(data.notes, 30);
     document.getElementById("tomorrowSeedOne").textContent = pick(data.tomorrow, 35);
     document.getElementById("tomorrowSeedTwo").textContent = pick(data.tomorrow, 36);
+
+    const tabs = Array.from(document.querySelectorAll("[role='tab']"));
+    const panels = Array.from(document.querySelectorAll("[role='tabpanel']"));
+
+    function activateTab(tab) {
+      tabs.forEach(button => button.setAttribute("aria-selected", String(button === tab)));
+      panels.forEach(panel => panel.classList.toggle("is-active", panel.id === tab.getAttribute("aria-controls")));
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => activateTab(tab));
+    });
+
+    if (window.location.hash === "#news") {
+      activateTab(document.getElementById("tabNews"));
+    }
   </script>
 </body>
 </html>
