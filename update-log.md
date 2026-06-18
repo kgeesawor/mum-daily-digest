@@ -7,6 +7,7 @@
 - Refreshed Canada & UK cards with Canada.ca nature restoration funding and community participation details; left the gentle UK children and nature items in place.
 - Refreshed Checkout & Caribou with Checkout.com's AI shopping trust research and a Caribou caregiver engagement partnership note.
 - Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed, and GitHub Pages live HTML was verified after publish.
 - Caveat: several GIS cards link to the GIS home/news listing because individual article pages were not reliably returned by the source page during update.
 
 ## 2026-06-17
