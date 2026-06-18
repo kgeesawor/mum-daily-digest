@@ -1,5 +1,14 @@
 # Mum Daily Digest Update Log
 
+## 2026-06-18
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius cards with GIS items on a Mauritian PhD student attending the Lindau Nobel Laureate Meeting, Mauritius-Italy higher education cooperation, school recycling, youth blood donation, and a new centenarian.
+- Refreshed Canada & UK cards with Canada.ca nature restoration funding and community participation details; left the gentle UK children and nature items in place.
+- Refreshed Checkout & Caribou with Checkout.com's AI shopping trust research and a Caribou caregiver engagement partnership note.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Caveat: several GIS cards link to the GIS home/news listing because individual article pages were not reliably returned by the source page during update.
+
 ## 2026-06-17
 
 - Quiet daily refresh completed for Mum's digest.
