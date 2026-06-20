@@ -1,5 +1,15 @@
 # Mum Daily Digest Update Log
 
+## 2026-06-19 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with June 19 GIS items on girls in STEM, digital public-service planning, Palma Community Health Centre, Rodriguan migrant support, student theatre for kindness, and practical Budget care measures.
+- Refreshed Canada & UK with the Canada Strong Pass starting June 19 and Natural England's June 17 wood pasture update; kept gentle Canada food, Forillon family-history, and UK children/nature cards.
+- Refreshed Checkout & Caribou with a clearer Caribou caregiver-retention note from TheKey; kept Checkout.com's Microsoft, AI shopping trust, Nahdi, and stablecoin cards.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed cards appeared, and refreshed source links were present.
+- Caveat: several fresh Mauritius items are on the GIS breaking-news listing rather than stable individual article URLs, so the refreshed cards link to the GIS breaking-news page.
+
 ## 2026-06-19
 
 - Quiet daily refresh completed for Mum's digest.
