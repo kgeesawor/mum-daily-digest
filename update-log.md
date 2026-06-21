@@ -1,5 +1,15 @@
 # Mum Daily Digest Update Log
 
+## 2026-06-20 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with GIS items on children caring for water and the environment, regional SME support ideas, girls in STEM, digital public-service planning, Palma Community Health Centre, Rodriguan migrant support, student theatre for kindness, and electric buses.
+- Refreshed Canada & UK with Canada.ca items on the Local Food Infrastructure Fund Community Support Stream, Obadjiwan-Fort Temiscamingue shared stewardship, Forillon family-history preservation, and Canada Strong Pass; refreshed the UK mix with family summer savings while keeping gentle nature and children activity cards.
+- Refreshed Checkout & Caribou with Checkout.com's Fireblocks settlement item, plus Microsoft, AI shopping trust, Nahdi, Coinbase, and Caribou caregiver-support cards.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present on refreshed sourced tabs.
+- Caveat: some fresh Mauritius cards still link to GIS listing pages because stable individual article URLs were not reliably exposed in search results.
+
 ## 2026-06-19 late
 
 - Quiet daily refresh completed for Mum's digest.
