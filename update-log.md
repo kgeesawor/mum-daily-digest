@@ -1,5 +1,15 @@
 # Mum Daily Digest Update Log
 
+## 2026-06-21 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with a gentle June 21 GIS item on Mauritius celebrating International Day of Yoga.
+- Refreshed Canada & UK with Canadian Heritage's June 21 National Indigenous Peoples Day statement and GOV.UK's natural history GCSE update for young people and green careers.
+- Left Checkout & Caribou mostly unchanged because there were no newer reliable public updates than the recent Checkout.com and Caribou cards already present.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present.
+- Caveat: the GIS yoga item currently links to the GIS home page where the 21 June item appears, rather than a stable individual article URL.
+
 ## 2026-06-20 late
 
 - Quiet daily refresh completed for Mum's digest.
