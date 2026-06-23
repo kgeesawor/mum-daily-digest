@@ -1,5 +1,16 @@
 # Mum Daily Digest Update Log
 
+## 2026-06-22 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with June 22 GIS items on heritage and artists, public health planning, agriculture and food security, support for women and children, and the blue economy; kept a few gentle recent island items where still useful.
+- Refreshed Canada & UK with Canada Strong Pass summer access, Parks Canada free admission, museum discounts for young people, Natural England's new green-space and environmental equity tools, UK warm-weather school guidance, and World Hydrography Day seabed-mapping safety.
+- Refreshed Checkout & Caribou with a Checkout.com payment-tokenization explainer and kept recent Microsoft, AI shopping trust, Nahdi, Fireblocks, and Caribou caregiver-recognition cards.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present.
+- GitHub Pages live HTML was verified after publish.
+- Caveat: one Mauritius blue-economy card links to the GIS news listing because the stable individual article link was not exposed in the page scrape.
+
 ## 2026-06-21 late
 
 - Quiet daily refresh completed for Mum's digest.
