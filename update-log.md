@@ -1,5 +1,15 @@
 # Mum Daily Digest Update Log
 
+## 2026-06-23 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with June 23 GIS items on inclusive education, sustainable tourism, youth sport and civic engagement, Rodrigues and outer-island growth, and coastal protection and climate resilience.
+- Refreshed Canada & UK with Parks Canada summer camping discounts, Canadian Heritage Celebrate Canada event listings, Natural England outdoor wellbeing context, and GOV.UK's family-facing online childhood consultation; kept recent useful Canada Strong Pass and green-space mapping cards.
+- Refreshed Checkout & Caribou with Checkout.com's June 17 Agent HAL engineering blog from the resource centre; kept recent Microsoft, AI shopping trust, Nahdi, Fireblocks, and Caribou caregiver-recognition cards.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present.
+- Caveat: several fresh Mauritius cards link to the GIS news listing because the visible GIS listing exposed the current article summaries more reliably than individual stable article pages during this run.
+
 ## 2026-06-22 late
 
 - Quiet daily refresh completed for Mum's digest.
