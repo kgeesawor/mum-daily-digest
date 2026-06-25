@@ -1,5 +1,15 @@
 # Mum Daily Digest Update Log
 
+## 2026-06-24 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with June 24 GIS items on women-led enterprises, a centenarian celebration in Curepipe, and Public Service Day, while keeping gentle recent Budget, coastal, and children/environment cards.
+- Refreshed Canada & UK with Canadian Heritage's June 24 Saint-Jean-Baptiste Day statement, a more exact Parks Canada Strong Pass source link, Natural England wood-pasture learning, and GOV.UK's People and Nature Surveys collection.
+- Refreshed Checkout & Caribou with Checkout.com's June 1 AI learning blog from the resource centre and corrected the caregiver-recognition card label to Caribou.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present.
+- Refreshed source URL checks returned HTTP 200.
+
 ## 2026-06-23 late
 
 - Quiet daily refresh completed for Mum's digest.
