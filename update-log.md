@@ -1,5 +1,16 @@
 # Mum Daily Digest Update Log
 
+## 2026-06-25 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with June 25 GIS items on public beach access, micro-credentials, cancer-care cooperation, seafarer recognition, and the National Fintech Strategy.
+- Refreshed Canada & UK with the Canada Strong Pass summer page, Parks Canada events, Canadian conservation project funding, and GOV.UK small-farm/nature support.
+- Refreshed Checkout & Caribou with Checkout.com's payment-tokenization guide, while keeping recent Microsoft, AI shopping trust, Nahdi, and Caribou caregiver-recognition cards.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present.
+- Source URL checks returned HTTP 200; two Canada.ca links needed curl because Node fetch timed out.
+- Caveat: current June 25 Mauritius cards link to the GIS home listing because stable individual article URLs were not reliably exposed during this run.
+
 ## 2026-06-24 late
 
 - Quiet daily refresh completed for Mum's digest.
