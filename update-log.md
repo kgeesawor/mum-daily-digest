@@ -31,6 +31,16 @@
 - Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present.
 - Caveat: several fresh Mauritius cards link to the GIS news listing because the visible GIS listing exposed the current article summaries more reliably than individual stable article pages during this run.
 
+## 2026-06-26 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with GIS items on young maths talent, women-led enterprises, a new centenarian celebration, a public-service open day, public beach access, and the national fintech strategy.
+- Refreshed Canada & UK with Environment and Climate Change Canada's London Climate Action Week update, UK summer family savings, and free breakfast club progress, while keeping the Canada Strong Pass and gentle nature items.
+- Refreshed Checkout & Caribou with Checkout.com's Agent HAL engineering blog and a current payments blog, while keeping recent Microsoft, tokenization, AI shopping trust, Nahdi, and Caribou caregiver-recognition cards.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present.
+- Caveat: the Node link sweep timed out on a few Canada.ca URLs, but those same Canada.ca links returned HTTP 200 with curl. Several GIS cards link to the GIS news listing because the current article content is exposed most reliably there.
+
 ## 2026-06-22 late
 
 - Quiet daily refresh completed for Mum's digest.
