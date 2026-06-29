@@ -1,5 +1,16 @@
 # Mum Daily Digest Update Log
 
+## 2026-06-28 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with recent GIS items on cancer-care collaboration, women-led enterprises, and a centenarian celebration, while keeping gentle June 25-26 cards on students, sea-mapping, beaches, fintech, culture, education, and coastal care.
+- Refreshed Canada & UK with current Parks Canada summer access and summer-activity browsing, while keeping Canada Strong Pass, museums, UK family activity savings, children's enrichment, breakfast clubs, and nature-planning cards.
+- Refreshed Checkout & Caribou lightly with current Checkout.com resource/newsroom cards and the Caribou/TheKey caregiver recognition item.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present.
+- Source URL sweep passed with curl fallback for three slower Canada.ca links.
+- Caveat: no worthwhile fresh Sunday item was found, so this was a gentle evergreen/current-source refresh rather than a full news replacement.
+
 ## 2026-06-25 late
 
 - Quiet daily refresh completed for Mum's digest.
