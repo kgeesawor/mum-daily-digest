@@ -9,6 +9,7 @@
 - Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
 - Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present.
 - Source URL sweep passed with curl fallback for three slower Canada.ca links.
+- GitHub Pages live HTML was verified after publish.
 - Caveat: no worthwhile fresh Sunday item was found, so this was a gentle evergreen/current-source refresh rather than a full news replacement.
 
 ## 2026-06-25 late
