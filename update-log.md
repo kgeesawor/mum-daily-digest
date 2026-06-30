@@ -1,5 +1,15 @@
 # Mum Daily Digest Update Log
 
+## 2026-06-29 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with a fresh 29 June GIS item on improving free Open Educational Resource courses for Mauritius learners.
+- Refreshed Canada & UK with Canadian Heritage's 29 June Canada Day practical notes and a GOV.UK farm-and-nature support item opening from 30 June.
+- Refreshed Checkout & Caribou lightly by pointing the Saudi payments and issuing/acquiring cards to direct Checkout.com blog source links.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present.
+- New/updated source URL sweep passed with short-timeout curl checks.
+
 ## 2026-06-28 late
 
 - Quiet daily refresh completed for Mum's digest.
