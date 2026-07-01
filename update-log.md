@@ -74,6 +74,17 @@
 - Source URL sweep passed with GET fallback for all 25 rendered/data source links.
 - Caveat: two fresh GIS cards link to the GIS home page because the current article links are exposed most reliably from the homepage listing.
 
+## 2026-06-30 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with fresh GIS items on medical education and environmental enforcement, while keeping the June 29 open-learning item near the top.
+- Refreshed Canada & UK with the official Canada Day 2026 page for a gentle July 1 celebration note.
+- Refreshed Checkout & Caribou with Checkout.com's June 30 Agoda case study on smoother travel payments.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present.
+- GitHub Pages live HTML was verified after publish.
+- Caveat: the two fresh GIS links resolve successfully, but GIS presents them through the shared latest-news page structure rather than a clean article-only page.
+
 ## 2026-06-22 late
 
 - Quiet daily refresh completed for Mum's digest.
