@@ -1,5 +1,15 @@
 # Mum Daily Digest Update Log
 
+## 2026-07-05 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with July 4 and July 3 GIS items on youth dialogue, the Triolet stadium reopening, Metro Express planning, digital collaboration, and kind school values.
+- Refreshed Canada & UK with Canada.ca and GOV.UK items on Canada's FIFA World Cup 2026 welcome, UK eGate access for more children from July 8, the childcare market study, Canada Strong Pass, and cleaner energy in Ottawa-Gatineau public buildings.
+- Left Checkout & Caribou mostly unchanged because the June 30 Agoda case study remains the newest useful Checkout.com item found, and there was no newer reliable Caribou update.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present.
+- Caveat: the update was pushed to `main`, but the GitHub Pages deployment for commit `188affd` failed with a transient "Deployment failed, try again later" message. A failed-job rerun was still queued after several minutes, so the live HTML could not be verified during this cron run.
+
 ## 2026-06-29 late
 
 - Quiet daily refresh completed for Mum's digest.
