@@ -8,7 +8,8 @@
 - Left Checkout & Caribou mostly unchanged because the June 30 Agoda case study remains the newest useful Checkout.com item found, and there was no newer reliable Caribou update.
 - Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
 - Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present.
-- Caveat: the update was pushed to `main`, but the GitHub Pages deployment for commit `188affd` failed with a transient "Deployment failed, try again later" message. A failed-job rerun was still queued after several minutes, so the live HTML could not be verified during this cron run.
+- GitHub Pages live HTML was verified after the follow-up log commit deployed successfully.
+- Caveat: the first Pages deployment for commit `188affd` failed with a transient "Deployment failed, try again later" message, but the next deployment from the log commit succeeded and the refreshed page is live.
 
 ## 2026-06-29 late
 
