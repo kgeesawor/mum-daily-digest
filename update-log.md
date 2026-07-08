@@ -1,5 +1,16 @@
 # Mum Daily Digest Update Log
 
+## 2026-07-07 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with July 7 GIS items on Rodrigues social care projects, land-drainage awareness, climate resilience, Mauritius-Morocco water cooperation, specialised healthcare MoUs, and Japan-funded plastic circular economy work.
+- Refreshed Canada & UK with a Canada.ca seniors community-project funding note and the live GOV.UK summer family savings page, while keeping other still-useful family, nature, travel, and culture cards.
+- Refreshed Checkout & Caribou lightly with Checkout.com's current intelligent acceptance homepage focus and a public AlayaCare + Caribou caregiver-recognition webinar.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present on the refreshed sourced tabs.
+- Refreshed source URL checks returned HTTP 200; the broader Node fetch sweep hung on later external sites, so the remaining checks were completed with short-timeout curl.
+- GitHub Pages deployed successfully and the live HTML was verified after publish.
+
 ## 2026-07-06 late
 
 - Quiet daily refresh completed for Mum's digest.
