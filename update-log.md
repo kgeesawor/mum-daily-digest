@@ -9,6 +9,7 @@
 - Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
 - Local Playwright check passed: all tabs rendered, refreshed Canada & UK cards appeared, and source links were present.
 - Refreshed Canada & UK source URL checks returned HTTP 200.
+- GitHub Pages deployed successfully and the live HTML was verified after publish.
 - Caveat: rural Scotland item is dated 9 July 2026 in UTC/UK timing; this cron ran late on 8 July Toronto time, already 9 July UTC.
 
 ## 2026-07-07 late
