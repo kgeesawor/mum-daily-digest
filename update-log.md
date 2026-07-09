@@ -1,5 +1,16 @@
 # Mum Daily Digest Update Log
 
+## 2026-07-08 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Canada & UK with official items on Canada summer sport events, UK eGate travel for more children, a UK solar project approval, and rural Scotland 4G signal improvements.
+- Kept Mauritius Good News mostly stable because the July 7 GIS cards were still the freshest gentle official island items found.
+- Kept Checkout & Caribou mostly stable because Checkout.com's June 30 Agoda update and the July 23 AlayaCare + Caribou webinar remained the best recent reliable public items.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed Canada & UK cards appeared, and source links were present.
+- Refreshed Canada & UK source URL checks returned HTTP 200.
+- Caveat: rural Scotland item is dated 9 July 2026 in UTC/UK timing; this cron ran late on 8 July Toronto time, already 9 July UTC.
+
 ## 2026-07-07 late
 
 - Quiet daily refresh completed for Mum's digest.
