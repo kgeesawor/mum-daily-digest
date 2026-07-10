@@ -1,5 +1,16 @@
 # Mum Daily Digest Update Log
 
+## 2026-07-09 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with 9 July GIS items on the National History Museum rehabilitation, a medical technology park, Blue Economy and agriculture cooperation, cooperatives, and veterinary diagnostic capacity, plus a Mauritius Now tourism leadership item.
+- Refreshed Canada & UK with gentle official/current items on Canada's seniors community-project funding, UK community climate and nature events, New Forest nature festivals, and Natural England's July nature updates.
+- Refreshed Checkout & Caribou with Checkout.com's 30 June Agoda travel-payments partnership and a 2026 payment-trends guide; kept the AlayaCare + Caribou caregiver-recognition webinar because it remains the best current public Caribou item found.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present.
+- New source URL checks returned HTTP 200; Canada.ca timed out in Node fetch but returned HTTP 200 with curl.
+- Caveat: several fresh Mauritius GIS cards link to the GIS home listing because the current article summaries are exposed most reliably there during this run.
+
 ## 2026-07-08 late
 
 - Quiet daily refresh completed for Mum's digest.
