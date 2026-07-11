@@ -1,5 +1,17 @@
 # Mum Daily Digest Update Log
 
+## 2026-07-10 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with gentle GIS items on organic household gardens, University of Mauritius doctoral research, sugarcane field learning, and Mauritius-Singapore cooperation.
+- Refreshed Canada & UK with July 10 official items on Saskatchewan active-transportation paths, UK physical-activity guidance, Quebec mobile connectivity, Quebec community infrastructure, and the Gordie Howe bridge opening date.
+- Refreshed Checkout & Caribou lightly with Checkout.com's public Canada launch/direct-acquiring newsroom item; no newer reliable Caribou update was found.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all tabs rendered, refreshed cards appeared, and source links were present.
+- Refreshed source URL checks returned HTTP 200.
+- GitHub Pages live HTML was verified after publish.
+- Caveat: several fresh Mauritius cards link to the GIS all-news listing because the current article content is exposed most reliably there.
+
 ## 2026-07-09 late
 
 - Quiet daily refresh completed for Mum's digest.
