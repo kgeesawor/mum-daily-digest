@@ -1,5 +1,15 @@
 # Mum Daily Digest Update Log
 
+## 2026-07-11 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with fresh 10-11 July GIS items on pension flexibility, seaweed compost, University of Mauritius student problem-solving, a new centenarian, and MRA service.
+- Refreshed Canada & UK with constructive official items on UK local skills plans, ocean protection, Toronto transit progress, and Newfoundland water upgrades, while keeping useful 10 July Canada and UK cards.
+- Refreshed Checkout & Caribou with current public Caribou article-page highlights and Checkout.com's latest Saudi payments blog; left Kushal & Shaadhvi unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all five tabs rendered, refreshed cards appeared, and source links were present.
+- New source URL checks returned HTTP 200. GitHub Pages deployment for `cf78fa1` succeeded, and the live HTML contained the refreshed content.
+- Caveat: fresh Mauritius cards link to the GIS listing because the current article content is exposed most reliably there.
+
 ## 2026-07-10 late
 
 - Quiet daily refresh completed for Mum's digest.
