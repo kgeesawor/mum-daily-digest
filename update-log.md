@@ -9,6 +9,7 @@
 - Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
 - Local Playwright check passed: all five tabs rendered, refreshed cards appeared, and source links were present.
 - New source URL checks returned HTTP 200.
+- GitHub Pages live HTML was verified after publish for commit `9203941`.
 - Caveat: the UK nature item is dated 13 July in UK time; this cron ran late on 12 July Toronto time, already 13 July UTC.
 
 ## 2026-07-11 late
