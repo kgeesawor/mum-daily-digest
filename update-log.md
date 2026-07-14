@@ -1,5 +1,16 @@
 # Mum Daily Digest Update Log
 
+## 2026-07-13 late
+
+- Quiet daily refresh completed for Mum's digest.
+- Refreshed Mauritius Good News with July 13 GIS items on a Grand Baie health promotion campaign, UNESCO support for children with special needs, Mauritius-India women empowerment collaboration, and local ingenuity in key sectors.
+- Refreshed Canada & UK with July 13 Canada.ca items on Blackfoot Crossing sustainability and Indigenous knowledge sharing, youth and disability skills training, and a permanent home path for Manitou Asinîy at Elk Island National Park; added a GOV.UK item on UK-Switzerland food and drink export opportunities.
+- Reviewed Checkout & Caribou; kept the tab steady because the newest reliable public items were already represented, including the AlayaCare + Caribou caregiver recognition webinar.
+- Left the Kushal & Shaadhvi tab unchanged because there was no new safe family-provided or public context to add.
+- Local Playwright check passed: all five tabs rendered, refreshed cards appeared, and source links were present. Refreshed source URLs returned HTTP 200.
+- GitHub Pages live HTML was verified after publish for commit `14c038c`.
+- Caveat: the fresh GIS cards link to the GIS news listing because the source page renders current items inside a shared listing rather than stable individual article URLs.
+
 ## 2026-07-12 late
 
 - Quiet daily refresh completed for Mum's digest.
